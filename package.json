@@ -1,0 +1,15 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "Auth functionalities",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joan Cerveto Serrano",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
