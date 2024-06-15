@@ -1,5 +1,8 @@
 export const PORT = 3000
 
+export const PROD = process.env.PROD === 'true' || false
+
+
 const whiteList: any[] = [
 ]
 
