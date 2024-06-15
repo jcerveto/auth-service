@@ -7,11 +7,18 @@ export class User {
     private _name: string = ''
     private _email: string = ''
     private _role: string = ''
+    private _id: string = ''
 
-    public constructor(name: string, email: string, role: string) {
+    public constructor(
+        name: string, 
+        email: string, 
+        role: string,
+        id: string = ''
+    ) {
         this.name = name
         this.email = email
         this.role = role
+        this.id = id
     }
 
     public get name() {
@@ -50,6 +57,14 @@ export class User {
         this._role = role
     }
 
+    public get id() {
+        return this._id
+    }
+
+    public set id(id: string) {
+        this._id = id
+    }
+
 
     public static fromJSON(json: any) {
         return new User(json.name, json.email, json.role)
@@ -63,6 +78,10 @@ export class User {
         }
     }
 
+    public equals(other: User) {
+        return this.id === other.id
+    }
+    
     public async create(): Promise<void> {
         await UserController.create(this)
     }
