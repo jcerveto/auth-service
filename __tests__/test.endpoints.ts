@@ -15,12 +15,6 @@ describe('Test the endpoints', () => {
         expect(response.status).toBe(200);
         expect(response.text).toBe('pong');
     });
-
-    test('GET /ping', async () => {
-        const response = await request(app).get('/ping');
-        expect(response.status).toBe(200);
-        expect(response.text).toBe('pong');
-    });
     
     
 })
