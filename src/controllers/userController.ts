@@ -5,11 +5,12 @@ import fs from 'fs/promises'
 import { User } from "../model/user"
 import { Validator } from "./validator";
 import { Role } from "../model/roles";
+import { USERS_FILE_PATH } from '../config';
 
 
 export class UserController {
     static SALT_ROUNDS = 10
-    static USER_FILE_PATH = './db/users.json'
+    static USER_FILE_PATH = USERS_FILE_PATH
     static FILE_ENCODING: any = 'utf-8'
 
 

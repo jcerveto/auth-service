@@ -1,12 +1,14 @@
 # auth-service
 
-## Objectives:
-- Configure Node Typescript project using linters.
-- Dockerize the application (optional).
+## Contents:
+- Configure Node Typescript project using.
 - HTTP server using express.
-- Authentication using JWT.
+- Testing using Jest.
 - CRUD operations for users in raw JSONL file.
 - Password hashing using bcrypt.
+
+## TODO:
+- Dockerize the application (optional).
+- Authentication using JWT.
 - Private routes.
-- Unit tests using Jest.
 
