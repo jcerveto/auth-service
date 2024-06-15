@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node build/run.js",
     "dev": "ts-node-dev src/run.ts",
+    "build": "tsc",
     "tsc": "tsc",
     "test": "jest --coverage --verbose --detectOpenHandles"
   },
